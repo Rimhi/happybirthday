@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday</title>
+    <meta charset="utf-8" />
+    <style>
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .layout {
+            background: linear-gradient(#FFFFFF,aquamarine) ;
+            margin: 0 auto;
+        }
+        .imghappybirthday{
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .container-name{
+            text-align: center;
+            font-size: 11vw;
+            font-family: "Baskerville Old Face";
+            font-weight: bold;
+            position: absolute;
+            flex: 1;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation:movecontainer 1s forwards ease;
+        }
+        .letterpink{
+            color: #FF0080;
+            animation:moveletter 1s infinite alternate ease-in-out;
+
+        }
+        .letteryellow{
+            color:#FFBC00;
+            animation:moveletter 1s infinite alternate ease-in-out;
+            animation-delay: 0.5s;
+        }
+        .letterblue {
+            color: #4EB2F9;
+            animation:moveletter 1s infinite alternate ease-in-out;
+            animation-delay: 0.2s;
+        }
+        .container-letters{
+            position: relative;
+        }
+        @keyframes  moveletter{
+            from{
+                transform: rotate(15deg);
+            }
+            to{
+                transform: rotate(-15deg);
+            }
+        }
+        @keyframes movecontainer {
+            0%{opacity: 0}
+            20%{ top:-1vh;}
+            40%{  top:-2vh;}
+            60%{  top:-3vh;}
+            80%{  top:-4vh;}
+            100%{  top:-5vh;}
+        }
+        .heart{
+            transform:rotate(45deg);
+            animation:beat 1s infinite alternate ease-in-out;
+        }
+
+        @keyframes beat{
+            to{
+                transform: rotate(45deg) scale(1.05);
+            }
+        }
+        .heart{
+            background:linear-gradient(45deg,#FF0080, #FFBC00,#4EB2F9);
+        }
+        .heart::before{
+
+            background: linear-gradient(180deg,#FFBC00, #FF0080);
+        }
+        .heart::after{
+            background: linear-gradient(90deg,#4EB2F9, #FF0080);
+
+        }
+        .heart,
+        .heart::before,
+        .heart::after{
+            width: 9vw;
+            height: 9vw;
+            background: #4EB2F9;
+
+        }
+        .heart::before,
+        .heart::after{
+            content:'';
+            display: block;
+            border-radius:50%;
+        }
+        .heart::before{
+            margin-top: calc(9vw*-.5);
+
+        }
+        .heart::after{
+            margin-top: calc(9vw* -0.5);
+            margin-left: calc(9vw* -0.5);
+        }
+        .container-herath{
+            font-size: 1.2em;
+            font-size: 1.2em;
+            margin-left: 6vw;
+            display: grid;
+
+            justify-content: center;
+            align-content: center;
+        }
+        .container-video{
+
+            margin: 2rem 1rem 4rem 1rem;
+        }
+        .container-patcu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .imgpatcu{
+            border-radius: 50%;
+            margin: 10vw auto;
+        }
+        p{
+            text-align: center;
+            font-size: 4vw;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        .container-date{
+            display: flex;
+            font-size: 10vw;
+            justify-content: center;
+            align-items: center;
+            padding: 10vw 0 0 0;
+        }
+        span{
+            font-size: 10px;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <div>
+        <img class="imghappybirthday" src="https://down-yuantu.pngtree.com/element_our/20231204/bg/96e9bb0ef5285.png?e=1713828980&st=MmY5MTY5NTE0N2ZhYTkzNjM4NmQ4MDc5ZDdlZGI5ZDc&n=—Pngtree—happy+birthday+decoration+hanging+letter_14006699.png" />
+        <div class="container-letters">
+            <div class="container-name">
+                <div class="letterpink">P</div>
+                <div class="letteryellow">A</div>
+                <div class="letterblue">T</div>
+                <div class="letterpink">C</div>
+                <div class="letteryellow">U</div>
+                <div class="container-herath">
+                    <div class="heart"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-patcu">
+            <img class="imgpatcu" src="https://i.pinimg.com/280x280_RS/8d/84/bf/8d84bf63b9ee7cadbec9a23a9f1dc536.jpg"/>
+        </div>
+        <p>Ni disney tiene una princesa tan bella como tu!</p>
+        <p>Por esto dispuso de sus princesas para felicitarte </p>
+        <div class="container-video">
+            <video width="100%" height="360" controls autoplay>
+                <!-- Aquí irán las fuentes de video y el texto alternativo -->
+                <source src="https://disneylatino-assets.akamaized.net//assets/cumplemagico/princesas/princesas_paula_andrea.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>Que tengas un dia super especial, te deseo todo lo mejor y que el Dios del cielo te colme de sus bendiciones </p>
+        <div class="container-date">
+            <div class="letterpink">2</div>
+            <div class="letteryellow">3</div>
+            <div class="letterblue">/</div>
+            <div class="letterpink">0</div>
+            <div class="letteryellow">4</div>
+            <div class="letterblue">/</div>
+            <div class="letterpink">2</div>
+            <div class="letteryellow">4</div>
+        </div>
+        <p>El mejor dia del año </p>
+        <span>Power By: Ricardo Monterrosa</span>
+    </div>
+</div>
+
+</body>
+</html>
